@@ -37,9 +37,9 @@
             <div class="dashboard_content">
                 <div class="content_left">
                     <p class="con_title">검사자 수</p>
-                    <p class="con_number">12,057,831</p>
+                    <p class="con_number" id= "accExamCnt">0</p>
                     <p class="con_title">확진자 수</p>
-                    <p class="con_number">212,488</p>
+                    <p class="con_number" id="decideCnt">0</p>
                 </div>
                 <div class="content_right">
                     <canvas id="regional_status" style="width: 100%; height: 100%"></canvas>
@@ -50,15 +50,84 @@
                     <canvas id="confirmed_chart" style="width: 100%; height: 100%"></canvas>
                 </div>
                 <div class="content_right">
-                    <canvas id="Vaccine_chart" style="width: 100%; height: 100%"></canvas>
+                    <canvas id="vaccine_chart" style="width: 100%; height: 100%"></canvas>
                 </div>
             </div>
             <div class="dashboard_content">
-                <div class="content_left">
-                    <canvas id="" style="width: 100%; height: 100%"></canvas>
+                <div class="content_left live_confirm_area">
+                    <div class="live_confirm_item" >
+                        <span class="time">16분전</span>
+                        <span class="region">경남 고성군</span>
+                        <span class="num">2</span>명 추가확진
+                    </div>
+                    <div class="live_confirm_item" >
+                        <span class="time">22분전</span>
+                        <span class="region">경남 진주시</span>
+                        <span class="num">12</span>명 추가확진
+                    </div>
+                    <div class="live_confirm_item" >
+                        <span class="time">23분전</span>
+                        <span class="region">대구 수성구</span>
+                        <span class="num">8</span>명 추가확진
+                    </div>
+                    <div class="live_confirm_item" >
+                        <span class="time">27분전</span>
+                        <span class="region">부산 사상구</span>
+                        <span class="num">12</span>명 추가확진
+                    </div>
+                    <div class="live_confirm_item" >
+                        <span class="time">28분전</span>
+                        <span class="region">경남 고성군</span>
+                        <span class="num">2</span>명 추가확진
+                    </div>
+                    <div class="live_confirm_item" >
+                        <span class="time">33분전</span>
+                        <span class="region">경남 고성군</span>
+                        <span class="num">2</span>명 추가확진
+                    </div>
+                    <div class="live_confirm_item" >
+                        <span class="time">42분전</span>
+                        <span class="region">경남 고성군</span>
+                        <span class="num">2</span>명 추가확진
+                    </div>
+                    <div class="live_confirm_item" >
+                        <span class="time">50분전</span>
+                        <span class="region">경남 고성군</span>
+                        <span class="num">2</span>명 추가확진
+                    </div>
                 </div>
                 <div class="content_right">
-
+                    <table class="region_confirm_tbl">
+                        <thead>
+                            <tr>
+                                <td>지역</td>
+                                <td>누적확진자</td>
+                                <td>신규확진자</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>서울</td>
+                                <td>56,462</td>
+                                <td>458 ▲</td>
+                            </tr>
+                            <tr>
+                                <td>서울</td>
+                                <td>56,462</td>
+                                <td>458 ▲</td>
+                            </tr>
+                            <tr>
+                                <td>서울</td>
+                                <td>56,462</td>
+                                <td>458 ▲</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="region_pager_area">
+                        <button>&lt;</button>
+                        <span class="current">1</span> / <span class="total">7</span>
+                        <button>&gt;</button>
+                    </div>
                 </div>
             </div>
         </div>
