@@ -11,4 +11,13 @@
     <select id="selectCoronaInfoByDate" resultType="com.greenart.vo.CoronaInfoVO">
         select * from corona_info where stateTime >= str_to_date(#{date}, "%Y-%m-%d") LIMIT 1
     </select>
+    <insert id="insertCoronaSidoInfo">
+        INSERT INTO coronasido_info
+            (createDt, deathCnt, defCnt, gubun, incDec, isolClearCnt, isolIngCnt, localOccCnt, overFlowCnt)
+                
+            VALUES(#{createDt}, #{deathCnt}, #{defCnt}, #{gubun}, #{incDec}, #{isolClearCnt}, #{isolIngCnt}, #{localOccCnt}, #{overFlowCnt});
+    </insert>
+    <select id="selectCoronaSidoInfoByDate" resultType="com.greenart.vo.CoronaSidoInfoVO">
+        select * from corona_info where stateTime >= str_to_date(#{date}, "%Y-%m-%d") LIMIT 1
+    </select>
 </mapper>
