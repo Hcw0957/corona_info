@@ -17,6 +17,7 @@ public class MainController {
     public String getMain(Model model) {
         // CoronaInfoVO vo = service.selectTodayCoronaInfo();
         // model.addAttribute("coronaInfo", vo);
+
         return "/index";
     }
 }

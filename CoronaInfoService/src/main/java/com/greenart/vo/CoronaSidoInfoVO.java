@@ -10,10 +10,12 @@ public class CoronaSidoInfoVO {
     private Date createDt;
     private Integer deathCnt;
     private Integer defCnt;
-    private Integer gubun;
+    private String gubun;
     private Integer incDec;
     private Integer isolClearCnt;
     private Integer isolIngCnt;
     private Integer localOccCnt;
     private Integer overFlowCnt;
+
+    private Integer diff;
 }
